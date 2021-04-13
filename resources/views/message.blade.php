@@ -85,7 +85,7 @@
                             <div class="control-container">
                                 <div class="custom-block left-block">
                                     <div class="link-wrapper">
-                                        <a href="/category" class="link-grey-dark has-icon-bottom icon-left-arrow">
+                                        <a href="/" class="link-grey-dark has-icon-bottom icon-left-arrow">
                                             <div class="has-text-secondary has-text-right">back</div>
                                         </a>
                                     </div>
