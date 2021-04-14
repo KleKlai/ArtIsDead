@@ -46,7 +46,7 @@
                                             </div>
                                             <div class="circle__middle">
                                                 <div class="circle-thank-msg js-msg-thank-end">{!! $messages->body !!}</div>
-                                                <div class="circle-name">dsads</div>
+                                                <div class="circle-name">{!! $messages->name ?? '' !!}</div>
                                             </div>
                                             <div class="circle__bottom has-text-centered">
                                                 <div class="circle-hashtag">#ARTISDEAD</div>

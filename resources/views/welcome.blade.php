@@ -84,35 +84,6 @@
                             </a>
                         </div>
                         @endforeach
-
-
-                        <div class="column is-half-mobile is-4-tablet is-3-desktop">
-                            <a href="/category" class="circle-link">
-                                <div class="circle circle--theme">
-                                    <div class="circle__top">
-                                        <div class="circle-cat-fig">
-                                            <img src="logo.png" alt="logo">
-                                        </div>
-                                    </div>
-                                    <div class="circle__middle">
-                                        <div class="circle-thank-msg">
-                                            <div class="lines-3 js-circle-msg see-more">
-                                                It’s extremely tiring to be a hawker especially with the long hours of
-                                                preparations so thank you for all your sacrifices and yummy food
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="circle-name">Zhir Yee</div>
-                                        </div>
-                                    </div>
-                                    <div class="circle__bottom has-text-centered">
-                                        <div class="circle-hashtag">
-                                            #ART IS DEAD
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
                         <!-- End of loop -->
 
                     </div>
