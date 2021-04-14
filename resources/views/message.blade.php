@@ -63,7 +63,7 @@
                                                 <div class="input-wrapper input-wrapper-msg">
                                                     <textarea type="text" class="input-message is-theme-input js-msg-thank"
                                                         placeholder="Write your thoughts or opinions about Art is Dead."
-                                                        contenteditable="true" data-maxlength="140"  name="body" rows="14" cols="30"  wrap="soft"></textarea>
+                                                        contenteditable="true" maxlength="140" name="body" rows="14" cols="30"  wrap="soft"></textarea>
                                                     <div class="circle-counter has-text-right js-msg-length">140</div>
                                                 </div>
                                                 <div class="input-wrapper input-wrapper-name">
