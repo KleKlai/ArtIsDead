@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="{{ asset('asset/style.css') }}">
 
     @livewireStyles
+
 </head>
 
 <body>
@@ -27,9 +28,9 @@
                             </a>
                         </div>
                         <div class="header-text-wrapper header-wrapper--without-link column is-12-touch is-8-desktop">
-                            <div class="header-title">Some title here</div>
+                            <div class="header-title">#ARTISDEAD Freedom Wall</div>
                             <div class="header-desc">
-                                You can put some message here. You can also include what this page all about.
+                                You are free to express your thoughts below. Is art dead? No? Tell us why.
                             </div>
                         </div>
                     </div>
@@ -56,36 +57,70 @@
                         <!-- You can loop this messages from database -->
 
                         @foreach ($messages  as $message)
-                            <div class="column is-half-mobile is-4-tablet is-3-desktop">
-                                <a href="{{ route('summary', $message) }}" class="circle-link">
-                                    <div class="circle circle--theme">
-                                        <div class="circle__top">
-                                            <div class="circle-cat-fig">
-                                                <img src="" alt="logo">
-                                            </div>
-                                        </div>
-                                        <div class="circle__middle">
-                                            <div class="circle-thank-msg">
-                                                <div class="lines-3 js-circle-msg see-more">
-                                                    {{ $message->body }}
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="circle-name">{{ $message->name }}</div>
-                                            </div>
-                                        </div>
-                                        <div class="circle__bottom has-text-centered">
-                                            <div class="circle-hashtag">
-                                                #ART IS DEAD
-                                            </div>
+                        <div class="column is-half-mobile is-4-tablet is-3-desktop">
+                            <a href="{{ route('summary', $message) }}" class="circle-link">
+                                <div class="circle circle--theme">
+                                    <div class="circle__top">
+                                        <div class="circle-cat-fig">
+                                            <img src="{{ asset('asset/logo.png') }}" alt="logo">
                                         </div>
                                     </div>
-                                </a>
-                            </div>
+                                    <div class="circle__middle">
+                                        <div class="circle-thank-msg">
+                                            <div class="lines-3 js-circle-msg see-more">
+                                                {{ $message->body }}
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="circle-name">{{ $message->name }}</div>
+                                        </div>
+                                    </div>
+                                    <div class="circle__bottom has-text-centered">
+                                        <div class="circle-hashtag">
+                                            #ART IS DEAD
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                         @endforeach
+
+
+                        <div class="column is-half-mobile is-4-tablet is-3-desktop">
+                            <a href="/category" class="circle-link">
+                                <div class="circle circle--theme">
+                                    <div class="circle__top">
+                                        <div class="circle-cat-fig">
+                                            <img src="logo.png" alt="logo">
+                                        </div>
+                                    </div>
+                                    <div class="circle__middle">
+                                        <div class="circle-thank-msg">
+                                            <div class="lines-3 js-circle-msg see-more">
+                                                It’s extremely tiring to be a hawker especially with the long hours of
+                                                preparations so thank you for all your sacrifices and yummy food
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="circle-name">Zhir Yee</div>
+                                        </div>
+                                    </div>
+                                    <div class="circle__bottom has-text-centered">
+                                        <div class="circle-hashtag">
+                                            #ART IS DEAD
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- End of loop -->
 
                     </div>
                 </div>
+
+                {{--  <div class="center-button-wrapper has-text-centered">
+                    <a class="btn-view-more-msg button is-primary is-rounded" href="/gallery">View More Messages</a>
+                </div>  --}}
             </div>
         </main>
 

@@ -41,7 +41,7 @@
                                         <div class="circle circle--theme">
                                             <div class="circle__top">
                                                 <div class="circle-cat-fig">
-                                                    <img src="" alt="logo">
+                                                    <img src="{{ asset('asset/logo.png') }}" alt="logo">
                                                 </div>
                                             </div>
                                             <div class="circle__middle">
@@ -73,7 +73,7 @@
                     </div>
                 </div>
                 <div class="find-out-sgunited">
-                    <span>Visit us at</span><a href="https://http://thebauhaus.min-art.org" target="_blank"
+                    <span>Visit us at</span><a href="http://thebauhaus.min-art.org" target="_blank"
                         class="button is-primary is-rounded">thebauhaus.min-art.org</a>
                 </div>
             </div>

@@ -471,7 +471,7 @@ th:not([align]) {
 }
 
 html {
-  background-color: #25201d;
+  background-color: #232323;
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -514,11 +514,11 @@ body {
   font-size: 1em;
   font-weight: 400;
   line-height: 1.5;
-  background-color: #25201d;
+  background-color: #232323;
 }
 
 a {
-  color: #606060;
+  color: #fdfdfd;
   cursor: pointer;
   text-decoration: none;
 }
@@ -2363,7 +2363,7 @@ fieldset[disabled] .button.is-dark.is-inverted.is-outlined {
 }
 
 .button.is-primary {
-  background-color: #ea1a3b;
+  background-color: #ed1b24;
   border-color: transparent;
   color: #fff;
 }
@@ -6813,7 +6813,7 @@ fieldset[disabled] .textarea:-ms-input-placeholder {
 }
 
 a.link-grey-dark {
-  color: #574a4e;
+  color: #574c50;
 }
 
 .has-icon-bottom {
@@ -8610,7 +8610,7 @@ a.link-grey-dark {
 }
 
 .section--message .end-screen .circle-thank-msg {
-  color: #000;
+  color: #fdfdfd;
 }
 
 .section--message .end-screen .circle-cat-text {
@@ -8805,7 +8805,7 @@ a.link-grey-dark {
 }
 
 .circle--write {
-  background-color: #ea1a3b;
+  background-color: #ed1b24;
   width: 100%;
   border-radius: 50%;
 }
@@ -8823,13 +8823,13 @@ a.link-grey-dark {
 
 @media screen and (max-width: 767px) {
   .circle--write .write-text {
-    font-size: 18px;
+    font-size: 12px;
   }
 }
 
 @media screen and (max-width: 767px) and (min-width: 320px) {
   .circle--write .write-text {
-    font-size: calc(18px + 24 * ((100vw - 320px) / 447));
+    font-size: 18;
   }
 }
 
@@ -8841,24 +8841,24 @@ a.link-grey-dark {
 
 @media print, screen and (min-width: 768px) {
   .circle--write .write-text {
-    font-size: 1.75rem;
+    font-size: 1.1rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .circle--write .write-text {
-    font-size: 1.83rem;
+    font-size: 1.2rem;
   }
 }
 
 @media screen and (min-width: 1408px) {
   .circle--write .write-text {
-    font-size: 2.5rem;
+    font-size: 1.4rem;
   }
 }
 
 .circle-link {
-  color: #000;
+  color: #fdfdfd;
   display: block;
   position: relative;
   padding-bottom: 100%;
@@ -8968,12 +8968,12 @@ a.link-grey-dark {
 }
 
 .circle__top {
-  height: 42%;
+  height: 25%;
 }
 
 @media screen and (min-width: 1408px) {
   .circle__top {
-    height: 40%;
+    height: 30%;
   }
 }
 
@@ -9036,7 +9036,7 @@ a.link-grey-dark {
 
 .circle-thank-msg {
   line-height: 1.2;
-  color: #000;
+  color: #fdfdfd;
   text-align: center;
   margin: 0 auto;
   position: relative;
@@ -9051,12 +9051,12 @@ a.link-grey-dark {
   width: 100%;
   bottom: 0;
   left: 0;
-  background: linear-gradient(
+  /* background: linear-gradient(
     0deg,
     #fff 8%,
     hsla(0, 0%, 100%, 0.9) 20%,
     hsla(0, 0%, 100%, 0) 85%
-  );
+  ); */
 }
 
 .circle-thank-msg .lines-1 {
@@ -9528,17 +9528,19 @@ a.footer-link {
 
 @media print, screen and (min-width: 768px) {
   .custom-block.has-gradient-left {
+    margin-left: 15px;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
-    background: linear-gradient(90deg, #25201d, #fff 25%, #fff 80%);
+    background: linear-gradient(90deg, #25201d, #25201d 25%, #25201d 80%);
   }
 }
 
 @media print, screen and (min-width: 768px) {
   .custom-block.has-gradient-right {
+    margin-right: 15px;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
-    background: linear-gradient(-90deg, #25201d, #fff 25%, #fff 80%);
+    background: linear-gradient(-90deg, #25201d, #25201d 25%, #25201d 80%);
   }
 }
 
@@ -9574,12 +9576,12 @@ a.footer-link {
 }
 
 .container--form .main-block .circle__top {
-  height: 36%;
+  height: 30%;
 }
 
 @media screen and (min-width: 1024px) {
   .container--form .main-block .circle__top {
-    height: 30%;
+    height: 25%;
   }
 }
 
@@ -9717,9 +9719,9 @@ a.footer-link {
 
 .container--form .main-block .circle__middle .is-theme-input {
   font-size: 12px;
-  color: #000;
+  color: #fdfdfd;
   padding: 8px;
-  background: #fcfcfc;
+  background: #25201d;
   border-radius: 8px;
 }
 
@@ -9737,7 +9739,7 @@ a.footer-link {
 
 @media screen and (min-width: 1024px) {
   .container--form .main-block .circle__middle .is-theme-input {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
@@ -9783,7 +9785,7 @@ a.footer-link {
 
 .container--form .main-block .circle__middle .input-wrapper-msg,
 .container--form .main-block .circle__middle .input-wrapper-name {
-  margin: 0 5%;
+  margin: 0px 10% 0px 5%;
 }
 
 @media screen and (min-width: 1408px) {
@@ -9970,7 +9972,7 @@ a.footer-link {
 
 .container--end .custom-block {
   border-radius: 30px;
-  background-color: #fff;
+  background-color: #25201d;
 }
 
 .container--end .custom-block.main-block {
@@ -10017,7 +10019,7 @@ a.footer-link {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.2;
-  color: #ea1a3b;
+  color: #fdfdfd;
   margin-bottom: 15px;
 }
 
@@ -10035,7 +10037,7 @@ a.footer-link {
 
 @media screen and (min-width: 1024px) {
   .container--end .end-title {
-    font-size: 30px;
+    font-size: 29px;
     margin-bottom: 10px;
   }
 }
@@ -10497,96 +10499,6 @@ a.footer-link {
   .error-msg,
   .error-msg-captcha {
     font-size: 48px;
-  }
-}
-
-.sticker-lity {
-  position: relative;
-  margin-left: 5%;
-}
-
-.sticker-lity a {
-  line-height: 0;
-}
-
-.sticker-lity__close {
-  position: absolute;
-  right: 0;
-  top: -12px;
-  transform: scaleX(1.3);
-  border: 1px solid #000;
-  padding: 0 5px;
-  border-radius: 50%;
-  box-shadow: 0 2px 2px 0 #00000096;
-  cursor: pointer;
-}
-
-.sticker-lity__button {
-  width: 25%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.sticker-lity__modal {
-  max-width: 660px;
-  margin: auto;
-  background: #fff;
-  border-radius: 10px;
-  padding: 15px;
-  cursor: pointer;
-}
-
-.sticker-lity__list {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.sticker-lity__icon {
-  width: 33.33333%;
-  text-align: center;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.sticker-lity__icon > img {
-  max-width: 100%;
-  max-height: 200px;
-  height: auto;
-}
-
-.sticker-lity .position-sticker {
-  text-align: left;
-  width: 17%;
-}
-
-.sticker-lity .position-sticker img {
-  max-width: 100%;
-}
-
-.sticker-lity__title {
-  font-size: 20px;
-  font-weight: 700;
-  color: #ea1a3b;
-  text-align: center;
-}
-
-@media screen and (max-width: 1408px) {
-  .sticker-lity__close {
-    font-size: 10px;
-    padding: 0 3px;
-  }
-}
-
-@media screen and (min-width: 1408px) {
-  .sticker-lity {
-    margin-left: 10%;
   }
 }
 

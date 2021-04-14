@@ -40,7 +40,7 @@
                                 <div class="circle circle--theme">
                                     <div class="circle__top">
                                         <div class="circle-cat-fig">
-                                            <img src="" alt="logo">
+                                            <img src="{{ asset('asset/logo.png') }}" alt="logo">
                                         </div>
                                     </div>
                                     <form id="message-form" action="{{ route('message') }}" method="post">
@@ -85,13 +85,14 @@
                             <div class="control-container">
                                 <div class="custom-block left-block">
                                     <div class="link-wrapper">
-                                        <a href="/" class="link-grey-dark has-icon-bottom icon-left-arrow">
+                                        <a href="/"
+                                            class="link-grey-dark has-icon-bottom icon-left-arrow">
                                             <div class="has-text-secondary has-text-right">back</div>
                                         </a>
                                     </div>
                                 </div>
-                                {{--  <div class="form-captcha">
-                                    <div id="grecaptcha" class="g-recaptcha"
+                                <div class="form-captcha">
+                                    <!-- <div id="grecaptcha" class="g-recaptcha"
                                         data-sitekey="6LelTL0ZAAAAAIf4JzOEtY9y2BnZRSWx-Kl4vWqR">
                                         <div style="width: 304px; height: 78px;">
                                             <div><iframe title="reCAPTCHA"
@@ -103,11 +104,11 @@
                                                 class="g-recaptcha-response"
                                                 style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
                                         </div><iframe style="display: none;"></iframe>
-                                    </div>
-                                </div>  --}}
+                                    </div> -->
+                                </div>
                                 <div class="custom-block right-block">
                                     <div class="link-wrapper">
-                                        <a href="javascript:void();" onclick="event.preventDefault(); document.getElementById('message-form').submit();"class="link-red has-icon-bottom icon-right-arrow js-form-btn">
+                                        <a href="javascript:void();" onclick="event.preventDefault(); document.getElementById('message-form').submit();" class="link-red has-icon-bottom icon-right-arrow js-form-btn">
                                             <div class="has-text-primary has-text-left">submit</div>
                                         </a>
                                     </div>
