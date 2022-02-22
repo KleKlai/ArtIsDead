@@ -22,7 +22,7 @@
                     <div class="columns is-mobile is-multiline is-vcentered">
                         <div class="header-logo column is-12-touch is-4-desktop">
                             <a href="">
-                                <h1 class="white">ART IS DEAD</h1>
+                                <h1 class="white">VOICES OF THE PEOPLE</h1>
                             </a>
                         </div>
                     </div>
@@ -39,9 +39,9 @@
                             <div class="circle-container">
                                 <div class="circle circle--theme">
                                     <div class="circle__top">
-                                        <div class="circle-cat-fig">
+                                        {{--  <div class="circle-cat-fig">
                                             <img src="{{ asset('asset/logo.png') }}" alt="logo">
-                                        </div>
+                                        </div>  --}}
                                     </div>
                                     <form id="message-form" action="{{ route('message') }}" method="post">
                                         @csrf
@@ -62,7 +62,7 @@
 
                                                 <div class="input-wrapper input-wrapper-msg">
                                                     <textarea type="text" class="input-message is-theme-input js-msg-thank"
-                                                        placeholder="Write your thoughts or opinions about Art is Dead."
+                                                        placeholder="Write your thoughts or opinions."
                                                         contenteditable="true" maxlength="140" name="body" rows="14" cols="30"  wrap="soft"></textarea>
                                                     <div class="circle-counter has-text-right js-msg-length">140</div>
                                                 </div>
@@ -77,7 +77,7 @@
                                         </div>
                                     </form>
                                     <div class="circle__bottom has-text-centered">
-                                        <div class="circle-hashtag">#ARTISDEAD</div>
+                                        <div class="circle-hashtag">#MASADATAYO</div>
                                     </div>
                                 </div>
                             </div>
@@ -125,7 +125,7 @@
             <div class="container">
                 <div class="level">
                     <div class="level-left">
-                        <div class="level-item footer-copyright"> © 2021 ART IS DEAD</div>
+                        <div class="level-item footer-copyright"> © 2022 VOICES OF THE PEOPLE</div>
                     </div>
                     <div class="level-right">
                         <div class="level-item">

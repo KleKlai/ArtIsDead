@@ -24,13 +24,13 @@
                     <div class="columns is-mobile is-multiline is-vcentered">
                         <div class="header-logo column is-12-touch is-4-desktop">
                             <a href="">
-                                <h1 class="white">ART IS DEAD</h1>
+                                <h1 class="white">VOICES OF THE PEOPLE</h1>
                             </a>
                         </div>
                         <div class="header-text-wrapper header-wrapper--without-link column is-12-touch is-8-desktop">
-                            <div class="header-title">#ARTISDEAD Freedom Wall</div>
+                            <div class="header-title">#VOICESOFTHEPEOPLE Freedom Wall</div>
                             <div class="header-desc">
-                                You are free to express your thoughts below. Is art dead? No? Tell us why.
+                                You are free to express your thoughts below. Tell us why.
                             </div>
                         </div>
                     </div>
@@ -61,9 +61,9 @@
                             <a href="{{ route('summary', $message) }}" class="circle-link">
                                 <div class="circle circle--theme">
                                     <div class="circle__top">
-                                        <div class="circle-cat-fig">
+                                        {{--  <div class="circle-cat-fig">
                                             <img src="{{ asset('asset/logo.png') }}" alt="logo">
-                                        </div>
+                                        </div>  --}}
                                     </div>
                                     <div class="circle__middle">
                                         <div class="circle-thank-msg">
@@ -77,7 +77,7 @@
                                     </div>
                                     <div class="circle__bottom has-text-centered">
                                         <div class="circle-hashtag">
-                                            #ART IS DEAD
+                                            #MASADATAYO
                                         </div>
                                     </div>
                                 </div>
@@ -100,7 +100,7 @@
             <div class="container">
                 <div class="level">
                     <div class="level-left">
-                        <div class="level-item footer-copyright"> © 2021 ART IS DEAD</div>
+                        <div class="level-item footer-copyright"> © 2022 VOICES OF THE PEOPLE</div>
                     </div>
                     <div class="level-right">
                         <div class="level-item">
