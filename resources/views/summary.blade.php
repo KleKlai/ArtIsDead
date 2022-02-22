@@ -40,16 +40,16 @@
                                     <div class="circle-container">
                                         <div class="circle circle--theme">
                                             <div class="circle__top">
-                                                <div class="circle-cat-fig">
+                                                {{--  <div class="circle-cat-fig">
                                                     <img src="{{ asset('asset/logo.png') }}" alt="logo">
-                                                </div>
+                                                </div>  --}}
                                             </div>
                                             <div class="circle__middle">
                                                 <div class="circle-thank-msg js-msg-thank-end">{!! $messages->body !!}</div>
                                                 <div class="circle-name">{!! $messages->name ?? '' !!}</div>
                                             </div>
                                             <div class="circle__bottom has-text-centered">
-                                                <div class="circle-hashtag">#ARTISDEAD</div>
+                                                <div class="circle-hashtag">#MASADATAYO</div>
                                             </div>
                                         </div>
                                     </div>
@@ -85,7 +85,7 @@
         <div class="container">
             <div class="level">
                 <div class="level-left">
-                    <div class="level-item footer-copyright"> © 2021 ART IS DEAD</div>
+                    <div class="level-item footer-copyright"> © 2022 VOICES OF THE PEOPLE</div>
                 </div>
                 <div class="level-right">
                     <div class="level-item">
