@@ -60,6 +60,9 @@
                                                     </div>
                                                 </div>
 
+                                                <div class="input-wrapper input-wrapper-name" style="display: none;">
+                                                    <input type="text" name="sector" value="{{ $sector }}"></input>
+                                                </div>
                                                 <div class="input-wrapper input-wrapper-msg">
                                                     <textarea type="text" class="input-message is-theme-input js-msg-thank"
                                                         placeholder="Write your thoughts or opinions."
@@ -70,14 +73,14 @@
                                                     <input type="text" name="name" class="input-name is-theme-input js-msg-name"
                                                         placeholder="Enter Name (optional)" contenteditable="true"
                                                         data-maxlength="23"></input>
-                                                    <div class="circle-counter has-text-right js-name-length">23</div>
+                                                    <div class="circle-counter has-text-right js-msg-length">23</div>
                                                 </div>
 
                                             </div>
                                         </div>
                                     </form>
                                     <div class="circle__bottom has-text-centered">
-                                        <div class="circle-hashtag">#MASADATAYO</div>
+                                        <div class="circle-hashtag" style="font-size: 20px;">#{{ $sector }}</div>
                                     </div>
                                 </div>
                             </div>

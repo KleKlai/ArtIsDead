@@ -49,7 +49,7 @@
                                                 <div class="circle-name">{!! $messages->name ?? '' !!}</div>
                                             </div>
                                             <div class="circle__bottom has-text-centered">
-                                                <div class="circle-hashtag">#MASADATAYO</div>
+                                                <div class="circle-hashtag">{!! $messages->sector !!}</div>
                                             </div>
                                         </div>
                                     </div>
@@ -65,7 +65,7 @@
                         </div>
                         <div class="custom-block right-block has-gradient-left">
                             <div class="link-wrapper">
-                                <a href="/message">
+                                <a href="/category">
                                     <div class="link-title">send<br>another one</div>
                                 </a>
                             </div>

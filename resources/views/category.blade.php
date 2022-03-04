@@ -31,8 +31,8 @@
                                     </div>
                                     <div class="col">
                                     <h1 class="white" style="font-size: 15px">An initiative of</h1>
-                                        <div style="width: 150px; height: 150px;">
-                                        <!-- <img src="{{ asset('asset/white.png') }}" alt="logo"> -->
+                                        <div style="margin-top: 20px;">
+                                        <img src="{{ asset('asset/white.png') }}" alt="logo">
                                     </div>
                                 </div>
 
@@ -57,7 +57,7 @@
                 <div class="message-circle-wrapper">
                     <div class="columns is-mobile is-multiline">
                         <div class="column is-half-mobile is-4-tablet is-3-desktop">
-                            <a href="/message" class="circle-link">
+                            <a href="{{ route('create', 'Quality Education') }}" class="circle-link">
                                 <div class="circle circle--theme">
                                     <div class="circle__top">
                                         {{--  <div class="circle-cat-fig">
@@ -67,7 +67,7 @@
                                     <div class="circle__middle">
                                         <div class="circle-thank-msg">
                                             <div class="lines-3 js-circle-msg see-more">
-                                            <i class="fa-solid fa-university"></i>
+                                            <i class="fa-solid fa-university fa-xl"></i>
                                             </div>
                                         </div>
                                         <div>
@@ -83,7 +83,7 @@
                             </a>
                         </div>
                         <div class="column is-half-mobile is-4-tablet is-3-desktop">
-                            <a href="/message" class="circle-link">
+                            <a href="{{ route('create', 'Environment and Hygiene') }}" class="circle-link">
                                 <div class="circle circle--theme">
                                     <div class="circle__top">
                                         {{--  <div class="circle-cat-fig">
@@ -93,7 +93,7 @@
                                     <div class="circle__middle">
                                         <div class="circle-thank-msg">
                                             <div class="lines-3 js-circle-msg see-more">
-                                            <i class="fa-solid fa-tree"></i>
+                                            <i class="fa-solid fa-tree fa-xl"></i>
                                             </div>
                                         </div>
                                         <div>
@@ -108,7 +108,7 @@
                             </a>
                         </div>
                         <div class="column is-half-mobile is-4-tablet is-3-desktop">
-                            <a href="/message" class="circle-link">
+                            <a href="{{ route('create', 'Tourism and Hospitality') }}" class="circle-link">
                                 <div class="circle circle--theme">
                                     <div class="circle__top">
                                         {{--  <div class="circle-cat-fig">
@@ -118,7 +118,7 @@
                                     <div class="circle__middle">
                                         <div class="circle-thank-msg">
                                             <div class="lines-3 js-circle-msg see-more">
-                                            <i class="fa-solid fa-torii-gate"></i>
+                                            <i class="fa-solid fa-torii-gate fa-xl"></i>
                                             </div>
                                         </div>
                                         <div>
@@ -133,7 +133,7 @@
                             </a>
                         </div>
                         <div class="column is-half-mobile is-4-tablet is-3-desktop">
-                            <a href="/message" class="circle-link">
+                            <a href="{{ route('create', 'Media and Communications') }}" class="circle-link">
                                 <div class="circle circle--theme">
                                     <div class="circle__top">
                                         {{--  <div class="circle-cat-fig">
@@ -143,7 +143,7 @@
                                     <div class="circle__middle">
                                         <div class="circle-thank-msg">
                                             <div class="lines-3 js-circle-msg see-more">
-                                            <i class="fa-solid fa-camera"></i>
+                                            <i class="fa-solid fa-camera fa-xl"></i>
                                             </div>
                                         </div>
                                         <div>
@@ -158,7 +158,7 @@
                             </a>
                         </div>
                         <div class="column is-half-mobile is-4-tablet is-3-desktop">
-                            <a href="/message" class="circle-link">
+                            <a href="{{ route('create', 'Gender Equality') }}" class="circle-link">
                                 <div class="circle circle--theme">
                                     <div class="circle__top">
                                         {{--  <div class="circle-cat-fig">
@@ -168,7 +168,7 @@
                                     <div class="circle__middle">
                                         <div class="circle-thank-msg">
                                             <div class="lines-3 js-circle-msg see-more">
-                                            <i class="fa-solid fa-venus-mars"></i>
+                                            <i class="fa-solid fa-venus-mars fa-xl"></i>
                                             </div>
                                         </div>
                                         <div>
@@ -183,7 +183,7 @@
                             </a>
                         </div>
                         <div class="column is-half-mobile is-4-tablet is-3-desktop">
-                            <a href="/message" class="circle-link">
+                            <a href="{{ route('create', 'Youth Innovations') }}" class="circle-link">
                                 <div class="circle circle--theme">
                                     <div class="circle__top">
                                         {{--  <div class="circle-cat-fig">
@@ -193,7 +193,7 @@
                                     <div class="circle__middle">
                                         <div class="circle-thank-msg">
                                             <div class="lines-3 js-circle-msg see-more">
-                                            <i class="fa-solid fa-gear"></i>
+                                            <i class="fa-solid fa-gear fa-xl"></i>
                                             </div>
                                         </div>
                                         <div>
@@ -208,7 +208,7 @@
                             </a>
                         </div>
                         <div class="column is-half-mobile is-4-tablet is-3-desktop">
-                            <a href="/message" class="circle-link">
+                            <a href="{{ route('create', 'Economy') }}" class="circle-link">
                                 <div class="circle circle--theme">
                                     <div class="circle__top">
                                         {{--  <div class="circle-cat-fig">
@@ -218,11 +218,11 @@
                                     <div class="circle__middle">
                                         <div class="circle-thank-msg">
                                             <div class="lines-3 js-circle-msg see-more">
-                                                <img/>
+                                            <i class="fa-solid fa-building fa-xl"></i>
                                             </div>
                                         </div>
                                         <div>
-                                            <div class="circle-name">Social Issues</div>
+                                            <div class="circle-name">Economy</div>
                                         </div>
                                     </div>
                                     <div class="circle__bottom has-text-centered">
@@ -233,7 +233,7 @@
                             </a>
                         </div>
                         <div class="column is-half-mobile is-4-tablet is-3-desktop">
-                            <a href="/message" class="circle-link">
+                            <a href="{{ route('create', 'Society') }}" class="circle-link">
                                 <div class="circle circle--theme">
                                     <div class="circle__top">
                                         {{--  <div class="circle-cat-fig">
@@ -243,11 +243,11 @@
                                     <div class="circle__middle">
                                         <div class="circle-thank-msg">
                                             <div class="lines-3 js-circle-msg see-more">
-                                                <img/>
+                                            <i class="fa-solid fa-users fa-xl"></i>
                                             </div>
                                         </div>
                                         <div>
-                                            <div class="circle-name"></div>
+                                            <div class="circle-name">Society</div>
                                         </div>
                                     </div>
                                     <div class="circle__bottom has-text-centered">

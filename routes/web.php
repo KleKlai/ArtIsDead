@@ -15,9 +15,7 @@ use App\Http\Controllers\MessagesController;
 
 Route::get('/', [MessagesController::class, 'index']);
 
-Route::get('/message', function () {
-    return view('message');
-});
+Route::get('/message/{sector}', [MessagesController::class, 'create'])->name('create');
 
 Route::post('/store', [MessagesController::class, 'store'])->name('message');
 
@@ -27,6 +25,6 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-Route::get('/test', function() {
+Route::get('/category', function() {
     return view('category');
 });

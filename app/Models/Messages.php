@@ -10,6 +10,6 @@ class Messages extends Model
     use HasFactory;
 
     protected $fillable = [
-        'body', 'name'
+        'body', 'name', 'sector'
     ];
 }

@@ -46,7 +46,7 @@
 
                         <!-- Start of create button -->
                         <div class="column is-half-mobile is-4-tablet is-3-desktop">
-                            <a href="/message" class="circle-link">
+                            <a href="/category" class="circle-link">
                                 <div class="circle circle--write">
                                     <div class="write-text">Write your message here</div>
                                 </div>
@@ -77,7 +77,7 @@
                                     </div>
                                     <div class="circle__bottom has-text-centered">
                                         <div class="circle-hashtag">
-                                            #MASADATAYO
+                                            #{{ $message->sector }}
                                         </div>
                                     </div>
                                 </div>
@@ -94,7 +94,6 @@
                 </div>  --}}
             </div>
         </main>
-
 
         <footer class="section section-footer">
             <div class="container">

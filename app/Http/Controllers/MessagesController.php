@@ -25,9 +25,11 @@ class MessagesController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create($sector)
     {
-        //
+        $sector = preg_replace('/\s+/', '', $sector);
+
+        return view('message', compact('sector'));
     }
 
     /**
@@ -39,7 +41,8 @@ class MessagesController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'body'   => 'required',
+            'sector'    => 'required',
+            'body'      => 'required',
             'name'      => 'nullable'
         ]);
 
