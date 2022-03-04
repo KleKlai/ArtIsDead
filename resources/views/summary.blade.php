@@ -73,8 +73,8 @@
                     </div>
                 </div>
                 <div class="find-out-sgunited">
-                    <span>Visit us at</span><a href="http://thebauhaus.min-art.org" target="_blank"
-                        class="button is-primary is-rounded">thebauhaus.min-art.org</a>
+                    <span>Visit us at</span><a href="https://masada.app" target="_blank"
+                        class="button is-primary is-rounded">Masada.app</a>
                 </div>
             </div>
     </div>
