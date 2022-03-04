@@ -89,7 +89,7 @@
                 </div>
                 <div class="level-right">
                     <div class="level-item">
-                        <h3 class="white">An initiative of TheBauHaus</h3>
+                        <h3 class="white">An initiative of Masada.app</h3>
                     </div>
                 </div>
             </div>
