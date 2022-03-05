@@ -56,8 +56,19 @@
             <div class="container">
                 <div class="message-circle-wrapper">
                     <div class="columns is-mobile is-multiline">
+
                         <div class="column is-half-mobile is-4-tablet is-3-desktop">
-                            <a href="{{ route('create', 'Quality Education') }}" class="circle-link">
+                            <a href="{{ route('create.category') }}" class="circle-link">
+                                <div class="circle circle--write">
+                                    <div class="write-text">Write your own category</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        @foreach ($categories as $category)
+
+                        <div class="column is-half-mobile is-4-tablet is-3-desktop">
+                            <a href="{{ route('create.message', $category) }}" class="circle-link">
                                 <div class="circle circle--theme">
                                     <div class="circle__top">
                                         {{--  <div class="circle-cat-fig">
@@ -67,12 +78,12 @@
                                     <div class="circle__middle">
                                         <div class="circle-thank-msg">
                                             <div class="lines-3 js-circle-msg see-more">
-                                            <i class="fa-solid fa-university fa-xl"></i>
+                                            <i class="fa-solid {{ $category->icon }} fa-xl"></i>
                                             </div>
                                         </div>
                                         <div>
                                         <i class="fa-che" style="color: #1c7ed6;"></i>
-                                            <div class="circle-name">Quality Education</div>
+                                            <div class="circle-name">{{ $category->name }}</div>
                                         </div>
                                     </div>
                                     <div class="circle__bottom has-text-centered">
@@ -82,182 +93,8 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="column is-half-mobile is-4-tablet is-3-desktop">
-                            <a href="{{ route('create', 'Environment and Hygiene') }}" class="circle-link">
-                                <div class="circle circle--theme">
-                                    <div class="circle__top">
-                                        {{--  <div class="circle-cat-fig">
-                                            <img src="{{ asset('asset/logo.png') }}" alt="logo">
-                                        </div>  --}}
-                                    </div>
-                                    <div class="circle__middle">
-                                        <div class="circle-thank-msg">
-                                            <div class="lines-3 js-circle-msg see-more">
-                                            <i class="fa-solid fa-tree fa-xl"></i>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="circle-name">Environment and Hygiene</div>
-                                        </div>
-                                    </div>
-                                    <div class="circle__bottom has-text-centered">
-                                        <div class="circle-hashtag">
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="column is-half-mobile is-4-tablet is-3-desktop">
-                            <a href="{{ route('create', 'Tourism and Hospitality') }}" class="circle-link">
-                                <div class="circle circle--theme">
-                                    <div class="circle__top">
-                                        {{--  <div class="circle-cat-fig">
-                                            <img src="{{ asset('asset/logo.png') }}" alt="logo">
-                                        </div>  --}}
-                                    </div>
-                                    <div class="circle__middle">
-                                        <div class="circle-thank-msg">
-                                            <div class="lines-3 js-circle-msg see-more">
-                                            <i class="fa-solid fa-torii-gate fa-xl"></i>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="circle-name">Tourism and Hospitality</div>
-                                        </div>
-                                    </div>
-                                    <div class="circle__bottom has-text-centered">
-                                        <div class="circle-hashtag">
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="column is-half-mobile is-4-tablet is-3-desktop">
-                            <a href="{{ route('create', 'Media and Communications') }}" class="circle-link">
-                                <div class="circle circle--theme">
-                                    <div class="circle__top">
-                                        {{--  <div class="circle-cat-fig">
-                                            <img src="{{ asset('asset/logo.png') }}" alt="logo">
-                                        </div>  --}}
-                                    </div>
-                                    <div class="circle__middle">
-                                        <div class="circle-thank-msg">
-                                            <div class="lines-3 js-circle-msg see-more">
-                                            <i class="fa-solid fa-camera fa-xl"></i>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="circle-name">Media and <br>Communications</div>
-                                        </div>
-                                    </div>
-                                    <div class="circle__bottom has-text-centered">
-                                        <div class="circle-hashtag">
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="column is-half-mobile is-4-tablet is-3-desktop">
-                            <a href="{{ route('create', 'Gender Equality') }}" class="circle-link">
-                                <div class="circle circle--theme">
-                                    <div class="circle__top">
-                                        {{--  <div class="circle-cat-fig">
-                                            <img src="{{ asset('asset/logo.png') }}" alt="logo">
-                                        </div>  --}}
-                                    </div>
-                                    <div class="circle__middle">
-                                        <div class="circle-thank-msg">
-                                            <div class="lines-3 js-circle-msg see-more">
-                                            <i class="fa-solid fa-venus-mars fa-xl"></i>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="circle-name">Gender Equality</div>
-                                        </div>
-                                    </div>
-                                    <div class="circle__bottom has-text-centered">
-                                        <div class="circle-hashtag">
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="column is-half-mobile is-4-tablet is-3-desktop">
-                            <a href="{{ route('create', 'Youth Innovations') }}" class="circle-link">
-                                <div class="circle circle--theme">
-                                    <div class="circle__top">
-                                        {{--  <div class="circle-cat-fig">
-                                            <img src="{{ asset('asset/logo.png') }}" alt="logo">
-                                        </div>  --}}
-                                    </div>
-                                    <div class="circle__middle">
-                                        <div class="circle-thank-msg">
-                                            <div class="lines-3 js-circle-msg see-more">
-                                            <i class="fa-solid fa-gear fa-xl"></i>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="circle-name">Youth Innovations</div>
-                                        </div>
-                                    </div>
-                                    <div class="circle__bottom has-text-centered">
-                                        <div class="circle-hashtag">
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="column is-half-mobile is-4-tablet is-3-desktop">
-                            <a href="{{ route('create', 'Economy') }}" class="circle-link">
-                                <div class="circle circle--theme">
-                                    <div class="circle__top">
-                                        {{--  <div class="circle-cat-fig">
-                                            <img src="{{ asset('asset/logo.png') }}" alt="logo">
-                                        </div>  --}}
-                                    </div>
-                                    <div class="circle__middle">
-                                        <div class="circle-thank-msg">
-                                            <div class="lines-3 js-circle-msg see-more">
-                                            <i class="fa-solid fa-building fa-xl"></i>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="circle-name">Economy</div>
-                                        </div>
-                                    </div>
-                                    <div class="circle__bottom has-text-centered">
-                                        <div class="circle-hashtag">
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="column is-half-mobile is-4-tablet is-3-desktop">
-                            <a href="{{ route('create', 'Society') }}" class="circle-link">
-                                <div class="circle circle--theme">
-                                    <div class="circle__top">
-                                        {{--  <div class="circle-cat-fig">
-                                            <img src="{{ asset('asset/logo.png') }}" alt="logo">
-                                        </div>  --}}
-                                    </div>
-                                    <div class="circle__middle">
-                                        <div class="circle-thank-msg">
-                                            <div class="lines-3 js-circle-msg see-more">
-                                            <i class="fa-solid fa-users fa-xl"></i>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="circle-name">Society</div>
-                                        </div>
-                                    </div>
-                                    <div class="circle__bottom has-text-centered">
-                                        <div class="circle-hashtag">
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- End of loop -->
+
+                        @endforeach
 
                     </div>
                 </div>

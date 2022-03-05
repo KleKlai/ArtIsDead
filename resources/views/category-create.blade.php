@@ -43,7 +43,7 @@
                                             <img src="{{ asset('asset/logo.png') }}" alt="logo">
                                         </div>  --}}
                                     </div>
-                                    <form id="message-form" action="{{ route('message') }}" method="post">
+                                    <form id="message-form" action="{{ route('create.category.store') }}" method="post">
                                         @csrf
 
                                         <div class="circle__middle">
@@ -59,29 +59,17 @@
                                                         </a>
                                                     </div>
                                                 </div>
-
-                                                <div class="input-wrapper input-wrapper-name" style="display: none;">
-                                                    <input type="text" name="category_id" value="{{ $category->id }}"></input>
-                                                </div>
-                                                <div class="input-wrapper input-wrapper-msg">
-                                                    <textarea type="text" class="input-message is-theme-input js-msg-thank"
-                                                        placeholder="Write your thoughts or opinions."
-                                                        contenteditable="true" maxlength="140" name="body" rows="14" cols="30"  wrap="soft"></textarea>
-                                                    <div class="circle-counter has-text-right js-msg-length">140</div>
-                                                </div>
                                                 <div class="input-wrapper input-wrapper-name">
                                                     <input type="text" name="name" class="input-name is-theme-input js-msg-name"
-                                                        placeholder="Enter Name (optional)" contenteditable="true"
+                                                        placeholder="Write here..." contenteditable="true"
                                                         data-maxlength="23"></input>
-                                                    <div class="circle-counter has-text-right js-msg-length">23</div>
+                                                    <div class="circle-counter has-text-right js-msg-length">40</div>
                                                 </div>
 
                                             </div>
                                         </div>
                                     </form>
-                                    <div class="circle__bottom has-text-centered">
-                                        <div class="circle-hashtag" style="font-size: 20px;">#{{ $category->hashtag }}</div>
-                                    </div>
+
                                 </div>
                             </div>
 

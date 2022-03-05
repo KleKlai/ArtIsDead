@@ -2,12 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Messages;
-use App\Models\User;
 use App\Models\Category;
 use Illuminate\Http\Request;
 
-class MessagesController extends Controller
+class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,9 +14,7 @@ class MessagesController extends Controller
      */
     public function index()
     {
-        $messages = Messages::latest()->get();
-
-        return view('welcome', compact('messages'));
+        //
     }
 
     /**
@@ -26,9 +22,9 @@ class MessagesController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create(Category $category)
+    public function create()
     {
-        return view('message', compact('category'));
+        return view('category-create');
     }
 
     /**
@@ -40,34 +36,38 @@ class MessagesController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'category_id'    => 'required',
-            'body'           => 'required',
-            'name'           => 'nullable'
+            'name'  => 'required'
         ]);
 
-        $messages = Messages::create($request->all());
+        Category::create([
+            'name'      => $request->name,
+            'hashtag'   => preg_replace('/\s+/', '', $request->name),
+            'icon'      => 'fa-brush'
+        ]);
 
-        return redirect()->route('summary', $messages);
+        return redirect()->route('create');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Messages  $messages
+     * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function show(Messages $messages)
+    public function show()
     {
-        return view('summary', compact('messages'));
+        $categories = Category::all('id', 'name', 'hashtag', 'icon');
+
+        return view('category', compact('categories'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Messages  $messages
+     * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function edit(Messages $messages)
+    public function edit(Category $category)
     {
         //
     }
@@ -76,10 +76,10 @@ class MessagesController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Messages  $messages
+     * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Messages $messages)
+    public function update(Request $request, Category $category)
     {
         //
     }
@@ -87,10 +87,10 @@ class MessagesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Messages  $messages
+     * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Messages $messages)
+    public function destroy(Category $category)
     {
         //
     }

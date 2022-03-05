@@ -5,16 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Messages extends Model
+class Category extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'body', 'name', 'category_id'
+        'name', 'hashtag', 'custom', 'icon'
     ];
 
-    public function category()
+    public function messages()
     {
-        return $this->belongsTo(Category::class);
+        return $this->hasMany(Messages::class);
     }
 }

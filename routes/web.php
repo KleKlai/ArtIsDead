@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MessagesController;
+use App\Http\Controllers\CategoryController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,7 +16,11 @@ use App\Http\Controllers\MessagesController;
 
 Route::get('/', [MessagesController::class, 'index']);
 
-Route::get('/message/{sector}', [MessagesController::class, 'create'])->name('create');
+Route::get('/category/create', [CategoryController::class, 'create'])->name('create.category');
+Route::post('/category/create', [CategoryController::class, 'store'])->name('create.category.store');
+Route::get('/category', [CategoryController::class, 'show'])->name('create');
+
+Route::get('/message/{category}', [MessagesController::class, 'create'])->name('create.message');
 
 Route::post('/store', [MessagesController::class, 'store'])->name('message');
 
@@ -24,7 +29,3 @@ Route::get('/message/show/{messages}', [MessagesController::class, 'show'])->nam
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
-
-Route::get('/category', function() {
-    return view('category');
-});

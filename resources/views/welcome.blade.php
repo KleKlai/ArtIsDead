@@ -76,8 +76,8 @@
                                         </div>
                                     </div>
                                     <div class="circle__bottom has-text-centered">
-                                        <div class="circle-hashtag">
-                                            #{{ $message->sector }}
+                                        <div class="circle-hashtag" style="font-size: 70%;">
+                                            #{{ $message->category->hashtag }}
                                         </div>
                                     </div>
                                 </div>

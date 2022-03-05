@@ -49,7 +49,7 @@
                                                 <div class="circle-name">{!! $messages->name ?? '' !!}</div>
                                             </div>
                                             <div class="circle__bottom has-text-centered">
-                                                <div class="circle-hashtag">{!! $messages->sector !!}</div>
+                                                <div class="circle-hashtag" style="font-size: 70%;">#{!! $messages->category->hashtag !!}</div>
                                             </div>
                                         </div>
                                     </div>
